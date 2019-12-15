@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Header = ({titulo}) => {
     return(
@@ -6,6 +7,10 @@ const Header = ({titulo}) => {
             <h4 className="brand-logo center">{titulo}</h4>
         </nav>
     )
+}
+
+Header.propTypes = {
+    titulo : PropTypes.string.isRequired
 }
 
 
